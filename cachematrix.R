@@ -1,6 +1,6 @@
 ##Caching the inverse of matrix is a simplified approach to compute matrix inversion. Below are two functions: 
 ## makeCacheMatrix creates a special matrix that cache's its own inverse and 
-##cacheSolve that computes the inverse of the matrix returned by makeCacheMatrix and if the inverse has already been computed, then the cacheSolve function retrieves the inverse from cache.
+##cacheSolve that computes the inverse of the matrix returned by makeCacheMatrix and if the inverse has already been computed #then the cacheSolve function retrieves the inverse from cache.
 
 ## makeCacheMatrix creates a list containing a function to
 # 1. set the value of matrix (set)
@@ -23,7 +23,7 @@ m <- NULL
 }
 
 
-## cacheSolve returns the inverse of the matrix. It first checks if the inverse has already been calculated. If yes, then it retrieves the inverse from cache and skips the computation. If not, then it computes the inverse and sets the value in the cache by using setinverse function.
+## cacheSolve returns the inverse of the matrix. It first checks if the inverse has already been calculated. If yes, then it #retrieves the inverse from cache and skips the computation. If not, then it computes the inverse and sets the value in the #cache by using setinverse function.
 
 cacheSolve <- function(x, ...) {
 m <- x$getinverse()
