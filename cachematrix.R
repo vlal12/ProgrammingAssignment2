@@ -23,7 +23,7 @@ m <- NULL
 }
 
 
-## cacheSolve returns the inverse of the matrix. It first checks if the inverse has already been calculated. If yes, then it #retrieves the inverse from cache and skips the computation. If not, then it computes the inverse and sets the value in the #cache by using setinverse function.
+## cacheSolve returns the inverse of the matrix. It first checks if the inverse has already been calculated. If yes, then it #retrieves the inverse from cache using getinverse function and skips the computation (second part of the function). If not, #then it computes the inverse and sets the value in the cache by using setinverse function.
 
 cacheSolve <- function(x, ...) {
 m <- x$getinverse()
